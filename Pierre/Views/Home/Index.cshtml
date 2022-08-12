@@ -29,14 +29,28 @@
       }
       else
       {
-        <h2 align=center>You are viewing anomously sign in to be able to make changes!</h2>
-      
+        <h2 align=center>You are viewing anomously sign in to be able to make changes and view both lists on the same page!</h2>
+        <br>
+        <div style="background: #32240D; color: white; font-size: 14px; height: 75px; width: 300px; float: left;">
+        <marquee behavior="alternate" direction="left" scrollamount="2"><span style="float: left; font-family: Oswald, Arial; padding: 0 0 0 2px;">A totally real ad</span></marquee><marquee behavior="alternate" direction="right" scrollamount="3"><span style="float: left; padding: 0 2px 0 0;"><a href="https://github.com/maxwellalvord/Pierre.Solution">CLICK HERE</a></span></marquee>
+        <span style="background: #FFF; color: #ffa92f; float: left;">Order Now: +xxx-xxx-xxxx</span><div style="float: right; font-size: xx-small;">
+        Ads by <span style="background: #FFF; color: #ffa92f;">MaxxityInc</span></div>
+        </div>
+        
+        <div style="background: #32240D; color: white; font-size: 14px; height: 75px; width: 300px; float: right;">
+        <marquee behavior="alternate" direction="right" scrollamount="2"><span style="float: left; font-family: Oswald, Arial; padding: 0 0 0 2px;">I swear this ad actually is real!</span></marquee><marquee behavior="alternate" direction="right" scrollamount="3"><span style="float: left; padding: 0 2px 0 0;"><a href="https://github.com/maxwellalvord/Pierre.Solution">CLICK HERE</a></span></marquee>
+        <span style="background: #FFF; color: #ffa92f; float: left;">Order Now: +xxx-xxx-xxxx</span><div style="float: right; font-size: xx-small;">
+        Ads by <span style="background: #FFF; color: #ffa92f;">MaxxityInc</span></div>
+        </div>
+          
           <ul id="main">
             <li>@Html.ActionLink("See all Flavors", "Index", "Flavors")</li>
             <li>@Html.ActionLink("See all Treats", "Index", "Treats")</li>
             <li>@Html.ActionLink("Create an account", "Index", "Account")</li>
+            <li>@Html.ActionLink("Need Help?", "Info")</li>
           </ul>
-          
+        <br>
+        <h3 align=center>Register an account to view without the ad!</h3>
       } 
 </div>
 </div>

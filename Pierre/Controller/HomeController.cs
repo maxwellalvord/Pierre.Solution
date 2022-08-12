@@ -22,5 +22,11 @@ namespace Pierre.Controllers
         return View();
       }
 
+      [HttpGet("/Info")]
+      public ActionResult Info()
+      {
+        return View();
+      }
+
     }
 }
