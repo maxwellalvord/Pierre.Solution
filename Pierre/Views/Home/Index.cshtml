@@ -9,18 +9,21 @@
         <img src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" alt="Bakery img">
           <h4 id="main">A list of treats!</h4>
             <ul id="main">
+
             @foreach (Treat treat in @ViewBag.Treats)
             {
               <li>@Html.ActionLink($"{treat.Name}", "Details", "Treats", new { id = treat.TreatId})</li>
             }
             </ul>
+
           <h4 id="main">A list of flavors!</h4>
             <ul id="main">
             @foreach (Flavor flavor in @ViewBag.Flavors)
             {
               <li>@Html.ActionLink($"{flavor.Name}", "Details", "Flavors", new { id = flavor.FlavorId })</li>
             }
-            </ul>  
+            </ul>
+
           <ul id="main">
               <li>@Html.ActionLink("Your Flavors", "Index", "Flavors")</li>
               <li>@Html.ActionLink("Your Treats", "Index", "Treats")</li>
@@ -31,6 +34,7 @@
       {
         <h2 align=center>You are viewing anomously sign in to be able to make changes and view both lists on the same page!</h2>
         <br>
+
         <div style="background: #32240D; color: white; font-size: 14px; height: 75px; width: 300px; float: left;">
         <marquee behavior="alternate" direction="left" scrollamount="2"><span style="float: left; font-family: Oswald, Arial; padding: 0 0 0 2px;">A totally real ad</span></marquee><marquee behavior="alternate" direction="right" scrollamount="3"><span style="float: left; padding: 0 2px 0 0;"><a href="https://github.com/maxwellalvord/Pierre.Solution">CLICK HERE</a></span></marquee>
         <span style="background: #FFF; color: #ffa92f; float: left;">Order Now: +xxx-xxx-xxxx</span><div style="float: right; font-size: xx-small;">
@@ -43,13 +47,14 @@
         Ads by <span style="background: #FFF; color: #ffa92f;">MaxxityInc</span></div>
         </div>
           
-          <ul id="main">
-            <li>@Html.ActionLink("See all Flavors", "Index", "Flavors")</li>
-            <li>@Html.ActionLink("See all Treats", "Index", "Treats")</li>
-            <li>@Html.ActionLink("Create an account", "Index", "Account")</li>
-            <li>@Html.ActionLink("Need Help?", "Info")</li>
-          </ul>
+        <ul id="main">
+          <li>@Html.ActionLink("See all Flavors", "Index", "Flavors")</li>
+          <li>@Html.ActionLink("See all Treats", "Index", "Treats")</li>
+          <li>@Html.ActionLink("Create an account", "Index", "Account")</li>
+          <li>@Html.ActionLink("Need Help?", "Info")</li>
+        </ul>
         <br>
+        
         <h3 align=center>Register an account to view without the ad!</h3>
       } 
 </div>
