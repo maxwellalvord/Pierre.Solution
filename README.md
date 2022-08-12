@@ -1,6 +1,6 @@
 # Pierre's Sweet and Savory Treats
 
-### This is a simple MVC website that allows authroized users to make changes to many to many related classes
+### This is a simple MVC website that allows authorized users to make changes to many to many related classes.
 
 ## By Maxwell Alvord
 
@@ -14,7 +14,7 @@
 * HTML
 
 ## Description 
-This is a MVC Webpage that has many to many functionality within the MySQL database and the program built. As long as the user signs in with a valid email, the user may add Treats and/or Flavors. If not signed in the anonomous visitor can only read the data. 
+This is a MVC Webpage that has many to many functionality within the MySQL database and the program built. As long as the user signs in with a valid email, the user may add Treats and/or Flavors. If not signed in the anonymous visitor can only read the data. 
 
 ## Setup/Installation Requirements 
 
