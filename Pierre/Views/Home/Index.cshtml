@@ -2,25 +2,29 @@
 @using Pierre.Models;
 
 <div class="container">
+<div id="homeindex">
      
      @if (User.Identity.IsAuthenticated)
       {
-            <ul>
+        <img src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" alt="Bakery img">
+          <h4 id="main">A list of treats!</h4>
+            <ul id="main">
             @foreach (Treat treat in @ViewBag.Treats)
             {
               <li>@Html.ActionLink($"{treat.Name}", "Details", "Treats", new { id = treat.TreatId})</li>
             }
             </ul>
-            <ul>
+          <h4 id="main">A list of flavors!</h4>
+            <ul id="main">
             @foreach (Flavor flavor in @ViewBag.Flavors)
             {
               <li>@Html.ActionLink($"{flavor.Name}", "Details", "Flavors", new { id = flavor.FlavorId })</li>
             }
             </ul>  
           <ul id="main">
-              <li>@Html.ActionLink("See all Flavors", "Index", "Flavors")</li>
-              <li>@Html.ActionLink("See all Treats", "Index", "Treats")</li>
-              <li>@Html.ActionLink("Create an account", "Index", "Account")</li>
+              <li>@Html.ActionLink("Your Flavors", "Index", "Flavors")</li>
+              <li>@Html.ActionLink("Your Treats", "Index", "Treats")</li>
+              <li>@Html.ActionLink("Account Info", "Index", "Account")</li>
           </ul> 
       }
       else
@@ -34,4 +38,5 @@
           </ul>
           
       } 
+</div>
 </div>

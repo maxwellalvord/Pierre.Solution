@@ -24,12 +24,10 @@
     </ul>
   }
 
-  <table id="table">
-    <tr>
-      <td>@Html.ActionLink("Add a Treat", "AddTreat")</td>
-      <td>@Html.ActionLink("Back to Flavors", "Index")</td>
-      <td>@Html.ActionLink("Edit Flavor", "Edit", new { id = Model.FlavorId })</td>
-      <td>@Html.ActionLink("Delete Flavor", "Delete", new { id = Model.FlavorId })</td>
-    </tr>
-  </table>
+    <ul id="main">
+      <li>@Html.ActionLink("Add a Treat", "AddTreat")</li>
+      <li>@Html.ActionLink("Back to Flavors", "Index")</li>
+      <li>@Html.ActionLink("Edit Flavor", "Edit", new { id = Model.FlavorId })</li>
+      <li>@Html.ActionLink("Delete Flavor", "Delete", new { id = Model.FlavorId })</li>
+    </ul>
 </div>

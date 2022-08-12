@@ -3,7 +3,7 @@
   
   @if (User.Identity.IsAuthenticated)
   {
-    <img src="https://images.unsplash.com/photo-1655648340915-019ee5a3fb2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="come on in sign" border="0">
+    <img src="https://images.unsplash.com/photo-1655648340915-019ee5a3fb2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="bakery mascot">
     <br>
     <p align=center>Hi @User.Identity.Name! Here is Pierres mascot Pastichio</p>
     @using (Html.BeginForm("LogOff", "Account"))
@@ -15,7 +15,7 @@
   }
   else
   {
-  <img src="https://images.unsplash.com/photo-1460467820054-c87ab43e9b59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1067&q=80" alt="sad dog" border="0">
+  <img src="https://images.unsplash.com/photo-1460467820054-c87ab43e9b59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1067&q=80" alt="sign in img">
   <hr />
       <ul id="main">
         <li>@Html.ActionLink("Register", "Register")</li>
