@@ -13,13 +13,11 @@
   } 
   else
   {
-    <h3>No Flavors have been added yet!</h3>
+    <h3 align=center>No Flavors have been added yet!</h3>
   }
-  <table id="table">
-    <tr>
-      <td>@Html.ActionLink("Add new Flavor", "Create")</td>
-      <td>@Html.ActionLink("Add new Treat", "Create", "Treats")</td>
-      <td>@Html.ActionLink("Home", "Index", "Home")</td>
-    </tr>
-  </table>
+    <ul id="main">
+      <li>@Html.ActionLink("Add new Flavor", "Create")</li>
+      <li>@Html.ActionLink("Add new Treat", "Create", "Treats")</li>
+      <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    </ul>
 </div>
