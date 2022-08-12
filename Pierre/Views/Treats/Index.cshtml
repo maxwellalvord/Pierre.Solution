@@ -1,0 +1,20 @@
+@using Pierre.Models;
+
+<div class="container">
+
+  @if (@Model.Count == 0)
+  {
+    <h3>No Treats have been added yet!</h3>
+  } 
+
+  <ul>
+    @foreach(Treat treat in Model)
+    {
+      <li>@Html.ActionLink($"{treat.Name}", "Details", new { id = treat.TreatId })</li>
+    }
+  </ul>
+    <ul id="main">
+      <li>@Html.ActionLink("Add new treats", "Create")</li>
+      <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    </ul>
+</div>

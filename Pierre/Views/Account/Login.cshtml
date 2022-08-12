@@ -5,9 +5,10 @@
 
 <div class="container">
   <hr />
-  <div id="table">
+  <div id="main">
     @using (Html.BeginForm())
     {
+      <div align=center>
         @Html.LabelFor(m => m.Email)
         @Html.TextBoxFor(m => m.Email)<br>
 
@@ -15,12 +16,12 @@
         @Html.PasswordFor(m => m.Password)<br>
 
         <br><input type="submit" value="Log in" class="btn btn-success" /><br>
+      </div>
     }
   </div>
-  <table id="table">
-    <tr>
-      <td>@Html.ActionLink("Register", "Register")</td>
-      <td>@Html.ActionLink("Home", "Index", "Home")</td>
-    </tr>
-  </table>
+  <br>
+    <ul id="main">
+      <li>@Html.ActionLink("Register", "Register")</li>
+      <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    </ul>
 </div>

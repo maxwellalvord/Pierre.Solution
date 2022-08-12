@@ -4,9 +4,10 @@
 
 <div class="container">
   <hr />
-  <div id="table">
+  <div id="main">
     @using (Html.BeginForm("Register", "Account", FormMethod.Post))
     {
+      <div align=center>
         @Html.LabelFor(user => user.Email)
         @Html.TextBoxFor(user=> user.Email, new { required = "required" })<br>
 
@@ -17,7 +18,11 @@
         @Html.PasswordFor(user=> user.ConfirmPassword, new { required = "required" })<br>
 
         <br><input type="submit" value="Register" class="btn btn-success"/>
+      </div>
     }
     </div>
-  <p>@Html.ActionLink("Home", "Index", "Home")</p>
+    <br>
+  <div align= center>
+    <p>@Html.ActionLink("Home", "Index", "Home")</p>
+  </div>
 </div>
